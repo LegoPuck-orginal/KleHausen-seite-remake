@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KleHausen – Team</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
   </head>
   <body>
     <header class="top-bar">
-      <div class="logo" aria-label="KleHausen Logo">KH</div>
+      <img class="logo" src="logo.png" alt="KleHausen Logo" />
       <a href="index.html" class="brand-link">KleHausen</a>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="about.html">About</a>
@@ -32,30 +33,50 @@
           <p class="block-tag">Menschen</p>
           <h2 id="team-title">Wir halten zusammen</h2>
           <div class="team-grid">
-            <article class="team-card">
-              <p class="role">Owner</p>
+            <article class="team-card" data-role="owner">
+              <p class="role-badge">Owner</p>
               <h3>Klim</h3>
-              <p class="bio">Zwar chaotisch, aber ein liebenswerter Kopf mit unerschöpflicher Energie.</p>
+              <p class="bio">Chaotisch sympathisch, hält Vision und Community warm.</p>
+              <ul class="team-responsibilities">
+                <li>Community-Roadmap</li>
+                <li>Event Moderation</li>
+              </ul>
             </article>
-            <article class="team-card">
-              <p class="role">Owner</p>
+            <article class="team-card" data-role="owner">
+              <p class="role-badge">Owner</p>
               <h3>LeysCraft</h3>
-              <p class="bio">Plant die großen Schritte und hält das Team auf Kurs – auch wenn sie selten on ist.</p>
+              <p class="bio">Plant die großen Schritte und sorgt für klare Prozesse.</p>
+              <ul class="team-responsibilities">
+                <li>Strategie & Partner</li>
+                <li>Teamkultur</li>
+              </ul>
             </article>
-            <article class="team-card">
-              <p class="role">Owner</p>
+            <article class="team-card" data-role="owner">
+              <p class="role-badge">Owner</p>
               <h3>Richi</h3>
-              <p class="bio">Technik-Herz, liebt alles rund um Minecraft und setzt Features blitzschnell um.</p>
+              <p class="bio">Technik-Herz und blitzschneller Umsetzer neuer Features.</p>
+              <ul class="team-responsibilities">
+                <li>Server Infrastruktur</li>
+                <li>Automation</li>
+              </ul>
             </article>
-            <article class="team-card">
-              <p class="role">Developa</p>
+            <article class="team-card" data-role="dev">
+              <p class="role-badge">Developa</p>
               <h3>Matti</h3>
-              <p class="bio">Unser Main-Dev – bei Bot-Problemen ist er deine erste Adresse.</p>
+              <p class="bio">Main-Dev – deine erste Adresse bei Bot- und UI-Fragen.</p>
+              <ul class="team-responsibilities">
+                <li>Discord Bots</li>
+                <li>Game Features</li>
+              </ul>
             </article>
-            <article class="team-card">
-              <p class="role">Admin</p>
+            <article class="team-card" data-role="admin">
+              <p class="role-badge">Admin</p>
               <h3>Jonas</h3>
-              <p class="bio">Die rechte Hand von KleHausen, kümmert sich zuverlässig um jedes To-do.</p>
+              <p class="bio">Hält Organisation & Support auf Kurs – zuverlässig wie immer.</p>
+              <ul class="team-responsibilities">
+                <li>Support Tickets</li>
+                <li>QA & Reports</li>
+              </ul>
             </article>
           </div>
         </div>

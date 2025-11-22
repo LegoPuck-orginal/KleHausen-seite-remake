@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Areliaxson Hub</title>
+    <title>KleHausen</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
   </head>
   <body>
     <header class="top-bar">
-      <div class="logo" aria-label="KleHausen Logo">KH</div>
+      <img class="logo" src="logo.png" alt="KleHausen Logo" />
       <a href="#hero" class="brand-link">KleHausen</a>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="about.html">About</a>
@@ -22,8 +23,8 @@
     </header>
 
     <section class="hero" aria-labelledby="hero-title" id="hero">
-      <p class="hero-tag">back on top</p>
-      <h1 id="hero-title">Banna</h1>
+      <p class="hero-tag">von grund auf neu</p>
+      <h1 id="hero-title">KleHausen</h1>
     </section>
 
     <main>
@@ -43,10 +44,45 @@
             <section class="panel announcements-panel" aria-labelledby="announcements-title">
               <header>
                 <h2 id="announcements-title">ankündigungen</h2>
+                <p class="panel-copy">Füge einfach weitere Karten hinzu – sie ordnen sich automatisch an.</p>
               </header>
               <div class="announcement-body">
-                <article class="announcement-card"></article>
-                <article class="announcement-card"></article>
+                <article class="announcement-card" data-status="live">
+                  <div class="announcement-meta">
+                    <p class="announcement-label">Devlog</p>
+                    <time datetime="2025-11-22">22.11.2025</time>
+                  </div>
+                  <h3>Whitelist öffnet demnächst</h3>
+                  <p>Wir finalisieren aktuell die Server-Checks. Danach geht die Whitelist-Phase live.</p>
+                  <ul>
+                    <li>Tester:innen wählen wir im Discord aus.</li>
+                    <li>Roadmap-Feedback wandert direkt ins nächste Sprint.</li>
+                  </ul>
+                </article>
+                <article class="announcement-card" data-status="info">
+                  <div class="announcement-meta">
+                    <p class="announcement-label">Community</p>
+                    <time datetime="2025-11-18">18.11.2025</time>
+                  </div>
+                  <h3>Creator Toolkit v1</h3>
+                  <p>Brand Assets, Shader Presets und Social Templates stehen nun bereit.</p>
+                  <ul>
+                    <li>Download im Discord unter #downloads.</li>
+                    <li>Lizenz gilt für Streams & Shorts.</li>
+                  </ul>
+                </article>
+                <article class="announcement-card" data-status="soon">
+                  <div class="announcement-meta">
+                    <p class="announcement-label">Event</p>
+                    <time datetime="2025-11-15">15.11.2025</time>
+                  </div>
+                  <h3>Community Abend</h3>
+                  <p>Gemütlicher Bau-Abend mit Q&A über kommende Features.</p>
+                  <ul>
+                    <li>Start 20:00 Uhr, Voice #lodge.</li>
+                    <li>Highlight-Clips teilen wir danach im Forum.</li>
+                  </ul>
+                </article>
               </div>
             </section>
 
@@ -54,15 +90,57 @@
               <section class="panel events-panel" aria-labelledby="events-title">
                 <header>
                   <h2 id="events-title">Events</h2>
-                  <p class="panel-copy">Noch nichts geplant – stay tuned.</p>
+                  <p class="panel-copy">Live & geplante Community-Termine.</p>
                 </header>
+                <ul class="event-list">
+                  <li class="event-card" data-kind="live">
+                    <p class="event-date">29. Nov · 20:00</p>
+                    <div>
+                      <h3>Bau & Chill Night</h3>
+                      <p>Entspannte Session im Voice #lodge mit Q&A zur Roadmap.</p>
+                    </div>
+                  </li>
+                  <li class="event-card" data-kind="soon">
+                    <p class="event-date">03. Dez · 18:30</p>
+                    <div>
+                      <h3>Mini-Games Testflug</h3>
+                      <p>Interne Tests für neue Event-Suite – Spots via Discord.</p>
+                    </div>
+                  </li>
+                </ul>
               </section>
 
               <section class="panel projects-panel" aria-labelledby="projects-title">
                 <header>
                   <h2 id="projects-title">laufende projekte</h2>
-                  <p class="panel-copy">Wir legen aktuell Roadmaps fest.</p>
+                  <p class="panel-copy">Status-Übersicht unserer wichtigsten Builds.</p>
                 </header>
+                <div class="project-tracks">
+                  <article class="project-track" data-progress="build">
+                    <div class="track-meta">
+                      <p class="track-tag">Build</p>
+                      <span>80%</span>
+                    </div>
+                    <h3>Spawn-Überarbeitung</h3>
+                    <p>Neue Wegeführung, Lobby-Infoscreens und Portal-Ring.</p>
+                  </article>
+                  <article class="project-track" data-progress="design">
+                    <div class="track-meta">
+                      <p class="track-tag">Design</p>
+                      <span>60%</span>
+                    </div>
+                    <h3>Economy 2.0</h3>
+                    <p>Verbindet Auktionen, Direktverkäufe und Händler-Events.</p>
+                  </article>
+                  <article class="project-track" data-progress="alpha">
+                    <div class="track-meta">
+                      <p class="track-tag">Alpha</p>
+                      <span>40%</span>
+                    </div>
+                    <h3>Moderationsportal</h3>
+                    <p>Case-Management mit Realtime-Logs für das komplette Team.</p>
+                  </article>
+                </div>
               </section>
             </div>
           </div>

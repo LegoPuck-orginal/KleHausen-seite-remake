@@ -134,7 +134,7 @@ a {
 
 .content-grid {
   display: grid;
-  grid-template-columns: minmax(300px, 0.9fr) minmax(480px, 1.6fr);
+  grid-template-columns: minmax(320px, 1fr);
   gap: 2.5rem;
 }
 
@@ -147,44 +147,12 @@ a {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
-.logs-panel {
-  min-height: 520px;
-}
-
-.eyebrow {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.logs-panel h2,
 .events-panel h2,
 .projects-panel h2 {
   margin: 0.2rem 0 0;
   text-transform: lowercase;
   font-size: 2.1rem;
   font-style: italic;
-}
-
-.log-body {
-  margin-top: 1.5rem;
-  padding: 1.2rem;
-  background: #05070f;
-  border-radius: 12px;
-  font-family: "JetBrains Mono", monospace;
-  color: #cdd7ff;
-  min-height: 360px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  overflow: hidden;
-}
-
-.log-body p {
-  margin: 0;
-  white-space: pre-wrap;
 }
 
 .announcements-panel {
@@ -279,9 +247,8 @@ a {
 }
 
 .bottom-panels {
-  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
